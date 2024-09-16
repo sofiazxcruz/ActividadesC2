@@ -1,0 +1,64 @@
+1-
+//Objetos literales y optional chaining operator 
+
+const frutas = ["banana","uva","fresa"]
+
+console.log(frutas[2]);
+
+2-
+//Objetos Literales, no indexados 
+
+const animal = {
+  color: "amarillo",
+  nombre: "spike",
+  rugiendo: true 
+  
+}
+
+console.log("Este perro es de color" +animal.color);
+console.log("y su nombre es " +animal.nombre);
+
+console.log(animal["ladrando"]);
+
+3-
+//Objetos literales, no indexados
+const animal = {
+  color: "blanco",
+  nombre: "perrita blanca",
+  ladrando: true, 
+  favoritos:{
+  dias:{
+    ok: true,
+},
+  noche:{
+  ok: false
+  }
+ }
+}
+
+//Guardar el valor de la propiedad color en una constante 
+
+const color = animal.color;
+const nombre =animal.nombre;
+
+console.log("color:" + color +", animal" + nombre);
+
+const animal = {
+  color: "azul",
+  nombre: "torogoz",
+  Volando: true, 
+  
+}
+
+//destructuring objetos literales
+
+const {color, nombre, volando} = animal;
+console.log("el" + nombre + "es color " + color);
+
+//arrays indexados
+
+const frutas = ["banana", "uva", "fresa"];
+
+//destructuring array 
+const [banana, uva, fresa] =bfrutas;
+console.log("A mi me gusta mucho la" + fresa);
